@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Navigation</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* Basic reset for styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+        }
+
+        /* Link styles */
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover effect for links */
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        /* Active link style (optional) */
+        .navbar a.active {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <% include navbar.ejs %>
+    
+    <div class="content">
+        <h1>Welcome to the Music App</h1>
+        <p>Explore your favorite artists and new releases!</p>
+    </div>
+</body>
+</html>

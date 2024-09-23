@@ -1,0 +1,53 @@
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; <span id="year"></span> Your Music App. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+
+<style>
+    /* Footer styles */
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #ff4081; /* Change color on hover */
+    }
+</style>
+
+<script>
+    // Set the current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+

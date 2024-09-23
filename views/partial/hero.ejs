@@ -1,0 +1,62 @@
+<div class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Our Music App</h1>
+        <p>Discover your favorite artists and the latest releases!</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </div>
+</div>
+
+<style>
+    /* Hero section styles */
+    .hero {
+        background-image: url('/path/to/your/image.jpg'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        height: 60vh; /* Adjust height as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Overlay for better text visibility */
+    }
+
+    .hero-content {
+        position: relative; /* To position content above the overlay */
+        z-index: 1; /* Bring content in front of the overlay */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Adjust font size as needed */
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2rem; /* Adjust font size as needed */
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        background-color: #ff4081; /* Button color */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+        background-color: #ff1e70; /* Darker shade on hover */
+    }
+</style>
